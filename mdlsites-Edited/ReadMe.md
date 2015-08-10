@@ -1,2 +1,3 @@
 # One MDL
-Tweaked the default template samples of google's MDL
+The default template page of samples of google's MDL
+Tweaking to follow
