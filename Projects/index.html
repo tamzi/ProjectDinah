@@ -1,38 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Templates</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="From a front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My MDL</title>
+
+    <!-- Add to homescreen -->
+  <!--
+   !!! Will see effect of disabling !!!
+<link rel="manifest" href="manifest.json">
+
+-->
+
+    <!-- Fallback to homescreen for Chrome <39 on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Material Design Lite">
+    <link rel="icon" sizes="192x192" href="mariner/assets/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon" href="images/ios-desktop.png">
+
+    <!-- TODO: Tile icon for Win8 (144x144 + tile color) -->
+    <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> -->
+    <!-- <meta name="msapplication-TileColor" content="#3372DF"> -->
+
+    <meta name="theme-color" content="#263238">
+
+    <link rel="shortcut icon" href="images/favicon.png" />
 
 
+    <!-- Page styles -->
+    <link rel="stylesheet" href="css/prism-default.css">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-
-
-
-
-
-</head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Uses a transparent header that draws on top of the layout's background -->
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body class="templates">
+<div class="image-preloader"></div>
+      <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
 .layout-transparent {
-  background: url('../assets/demos/transparent.jpg') center / cover;
+  background: url('images/aset.jpg') center / cover;
 }
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
@@ -41,12 +57,7 @@
   color: white;
 }
 </style>
-
-
-
-
-
-<div class="layout-transparent mdl-layout mdl-js-layout">
+<div class="layout-transparent mdl-layout mdl-js-layout mdl-color--grey-900">
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
@@ -74,3 +85,59 @@
   <main class="mdl-layout__content">
   </main>
 </div>
+
+        <main class="docs-layout-content mdl-layout__content mdl-color-text--grey-600">
+
+
+
+
+
+        <!--           Footer                   -->
+
+      <section class="docs-text-styling download mdl-color--grey-800">
+        <a href="#" class="mdl-color-text--grey-50">Download Kit</a>
+      </section>
+      <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+        <ul>
+          <a href="https://twitter.com/googledesign" class="mdl-mini-footer--social-btn social-btn social-btn__twitter"></a>
+          <a href="https://github.com/google/material-design-lite" class="mdl-mini-footer--social-btn social-btn social-btn__github"></a>
+          <a href="https://plus.google.com/+googledesign" class="mdl-mini-footer--social-btn social-btn social-btn__gplus"></a>
+        </ul>
+        <ul>
+          <a class="mdl-color-text--grey-600" href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a>
+          <a class="mdl-color-text--grey-600" href="https://github.com/google/material-design-lite/issues">Help</a>
+        </ul>
+      </footer>
+    </main>
+  </div>
+
+    <!-- IE Compatibility shims -->
+      <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js""></script>
+      <![endif]-->
+
+      <!--[if IE]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flexie/1.0.3/flexie.min.js"></script>
+        <link href="../assets/ie.css" rel="stylesheet">
+      <![endif]-->
+    <!-- end shims -->
+
+
+    <!-- Material Design Lite -->
+    <script src="mariner/js/material.min.js"></script>
+    <!-- Add Copy-to-CodePen buttons to code blocks -->
+    <script src="mariner/js/codepen.js"></script>
+
+    <!-- Enable Prism syntax highlighting -->
+    <script src="mariner/js/prism.js"></script>
+    <script src="mariner/js/prism-markup.min.js"></script>
+    <script src="mariner/js/prism-javascript.min.js"></script>
+    <script src="mariner/js/prism-css.min.js"></script>
+    <script src="mariner/js/prism-bash.min.js"></script>
+    <script src="mariner/js/main.js"></script>
+    <!-- Built with love using Material Design Lite -->
+  </body>
+</html>
