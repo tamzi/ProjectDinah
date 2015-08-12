@@ -1,2 +1,2 @@
 # ProjectDinah
-Some of my messing around websites done in Material design lite from google
+Some of my messing around websites done in  [Material Design lite](http://www.getmdl.io/) from google
