@@ -10,7 +10,7 @@
     }
 
 body::before {
-    background-image: url('images/bg.jpg');
+    background-image: url('imgs/city_lights.jpg');
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -126,7 +126,7 @@ body .demo-blog {
   order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+  background-image: url('imgs/droplet.jpg');
 }
 .demo-blog .something-else .mdl-card__media {
   display: flex;
